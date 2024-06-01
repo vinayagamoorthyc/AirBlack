@@ -26,7 +26,7 @@ const Apply = () => {
                     </View>
                 </View>
                 <View style={styles.buttonContainer}>
-              <Button title="Submit" color="#fff"/>
+              <Button title="Apply Now" color="#fff"/>
             </View>
             </View>
         </View>
