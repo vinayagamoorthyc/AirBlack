@@ -44,12 +44,12 @@ const styles = StyleSheet.create({
         padding: 20,
       },
       header: {
-        alignItems: 'center',
+        alignItems: 'flex-start',
         marginBottom: 20,
       },
       title: {
         color: '#fff',
-        fontSize: 24,
+        fontSize: 28,
         fontWeight: 'bold',
         textAlign: 'left',
         marginVertical: 10,
@@ -57,9 +57,8 @@ const styles = StyleSheet.create({
       subtitleContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '100%',
-        paddingHorizontal: 20,
-        marginVertical: 10,
+        width: '90%',
+        
       },
       subtitle: {
         color: '#fff9',
