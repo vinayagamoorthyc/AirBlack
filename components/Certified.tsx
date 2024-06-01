@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const Certified = () => {
   return (
     <View style={styles.overlay}>
         <Text style={styles.title}>Get Certified From{"\n"} India's Biggest{"\n"} Beauty Platform</Text>
-
+        <Image
+                    source={require('../assets/images/certificate.png')} 
+                    style={styles.certificate} 
+                />
     </View>
   )
 }
@@ -18,6 +21,8 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         padding: 20,
+        alignItems:'center',
+        gap:20
     },
     title: {
         color: '#fff',
@@ -26,4 +31,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginVertical: 10,
     },
+    certificate:{
+        width: 350,
+        height: 270,
+        marginBottom:20
+    }
 })
