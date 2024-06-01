@@ -11,7 +11,7 @@ const Footer = () => {
         <View style={styles.overlay}>
                 <Text style={styles.title}>Join our growing{"\n"} community of{"\n"} 35,000+ alumni</Text>
                 <View style={styles.buttonContainer}>
-                    <Button title="Apply Now" color="#fff"/>
+                    <Button title="Apply Now" color="#fff" />
                 </View>
         </View>
     </ImageBackground>
