@@ -53,7 +53,7 @@ const Form = () => {
                 onChange={item => {
                   setValue0(item.value);
                 }}
-              /><TextInput style={styles.input2} placeholder="Eg. 00000 00000" placeholderTextColor="#aaa"/>
+              /><TextInput style={styles.input2} placeholder="Eg. 00000 00000" placeholderTextColor="#aaa" keyboardType='phone-pad'/>
             </View>
             <Text>*Select your profession</Text>
             <Dropdown
