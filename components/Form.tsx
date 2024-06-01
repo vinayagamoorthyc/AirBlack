@@ -1,4 +1,6 @@
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+
 import React from 'react'
 
 const Form = () => {
@@ -7,13 +9,13 @@ const Form = () => {
           <View style={styles.header}>
             <Text style={styles.title}>Professional Online Makeup Course</Text>
             <View style={styles.subtitleContainer}>
-              <Text style={styles.subtitle}>Certification Programme</Text>
-              <Text style={styles.rating}>Rated 4.85/5</Text>
+              <Text style={styles.subtitle}><Ionicons name="bookmark" size={13} color="white" /> Certification Programme</Text>
+              <Text style={styles.rating}><Ionicons name="star" size={13} color="#ffd700" /> Rated 4.85/5</Text>
             </View>
             <View style={styles.bullets}>
-              <Text style={styles.bullet}>• India's No.1 Online Makeup Course</Text>
-              <Text style={styles.bullet}>• Learn by LIVE Do-it-Together Classes</Text>
-              <Text style={styles.bullet}>• Unlimited Practise Session to master skills</Text>
+              <Text style={styles.bullet}>✓&nbsp; India's No.1 Online Makeup Course</Text>
+              <Text style={styles.bullet}>✓&nbsp; Learn by LIVE Do-it-Together Classes</Text>
+              <Text style={styles.bullet}>✓&nbsp; Unlimited Practise Session to master skills</Text>
             </View>
           </View>
           
@@ -36,7 +38,7 @@ export default Form
 
 const styles = StyleSheet.create({
     overlay: {
-        backgroundColor: 'black',
+        backgroundColor: '#000',
         flex: 1,
         width: '100%',
         padding: 20,
@@ -60,11 +62,11 @@ const styles = StyleSheet.create({
         marginVertical: 10,
       },
       subtitle: {
-        color: '#fff',
+        color: '#fff9',
+        justifyContent:'center',
+        alignItems:'center',
         backgroundColor: '#444',
-        paddingVertical: 5,
-        paddingHorizontal: 10,
-        borderRadius: 5,
+        padding:5,
       },
       rating: {
         color: '#ffd700',
@@ -77,8 +79,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
       },
       bullet: {
-        color: '#fff',
-        fontSize: 16,
+        color: '#999',
+        fontSize: 14.5,
         marginVertical: 2,
       },
       form: {
