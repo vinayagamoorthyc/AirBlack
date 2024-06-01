@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
       },
       form: {
         backgroundColor: '#fff',
-        borderRadius: 10,
+        borderRadius: 0,
         padding: 20,
         width: '100%',
         marginTop: 20,
