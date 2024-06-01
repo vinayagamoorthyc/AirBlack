@@ -1,4 +1,4 @@
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
@@ -10,21 +10,24 @@ const Apply = () => {
     >
         <View style={styles.overlay}>
             <View style={styles.applyflex}>
-                <Text style={styles.title}>Why Should You  Join Airblack?</Text>
+                <Text style={styles.title}>Why Should You Join Airblack?</Text>
                 <View style={styles.applyfeatures}>
-                    <View >
-                        <Ionicons name="bookmark" size={13} color="white" /> 
-                        <Text style={styles.featuretext}>Do-it-together,  live on zoom</Text>
+                    <View style={styles.featureflex}>
+                        <Ionicons name="videocam" size={27} color="white" /> 
+                        <Text style={styles.featuretext}>Do-it-together,{"\n"} live on zoom</Text>
                     </View>
-                    <View>
-                        <Ionicons name="bookmark" size={13} color="white" />
-                        <Text style={styles.featuretext}>4.8 /5  Rated Classes</Text>
+                    <View style={styles.featureflex}>
+                        <Ionicons name="star" size={27} color="white" />
+                        <Text style={styles.featuretext}>4.8 /5 {"\n"}Rated Classes</Text>
                     </View>
-                    <View >
-                        <Ionicons name="bookmark" size={13} color="white" />
-                        <Text style={styles.featuretext}>35000+  Members</Text>
+                    <View style={styles.featureflex}>
+                        <Ionicons name="people-circle" size={27} color="white" />
+                        <Text style={styles.featuretext}>35000+{"\n"} Members</Text>
                     </View>
                 </View>
+                <View style={styles.buttonContainer}>
+              <Button title="Submit" color="#fff"/>
+            </View>
             </View>
         </View>
     </ImageBackground>
@@ -47,6 +50,8 @@ const styles = StyleSheet.create({
       },
       applyflex:{
         alignItems:'center',
+        gap:40,
+
       },
       title: {
         color: '#fff',
@@ -56,11 +61,24 @@ const styles = StyleSheet.create({
         marginVertical: 10,
       },
       applyfeatures:{
+        flexDirection: 'row',
+        gap:25,
 
       },
       featuretext:{
         color:'#fff',
-        fontSize: 20,
-
+        fontSize: 17,
+        textAlign:'center'
+      },
+      featureflex:{
+        alignItems:'center',
+        gap:10
+      },
+      buttonContainer: {
+        borderWidth: 1,
+        borderRadius: 5,
+        padding: 3,
+        borderColor:'#fff',
+        width:'95%'
       },
 })

@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
       input: {
         borderWidth: 1,
         borderColor: '#000',
-        borderRadius: 0,
+        borderRadius: 5,
         padding: 10,
         marginVertical: 10,
         color: '#000',
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
       buttonContainer: {
         borderWidth: 1,
         marginTop: 20,
-        borderRadius: 0,
+        borderRadius: 5,
         padding: 3,
       },
 })
