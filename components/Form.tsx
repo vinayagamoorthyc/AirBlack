@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'left',
         marginVertical: 10,
+        fontFamily:'YesevaOne-Regular'
       },
       subtitleContainer: {
         flexDirection: 'row',
@@ -66,12 +67,14 @@ const styles = StyleSheet.create({
         alignItems:'center',
         backgroundColor: '#444',
         padding:5,
+        fontFamily:'Dosis-Medium'
       },
       rating: {
         color: '#ffd700',
         paddingVertical: 5,
         paddingHorizontal: 10,
         borderRadius: 5,
+        fontFamily:'Dosis-Medium'
       },
       bullets: {
         alignItems: 'flex-start',
@@ -81,6 +84,7 @@ const styles = StyleSheet.create({
         color: '#999',
         fontSize: 14.5,
         marginVertical: 2,
+        fontFamily:'Dosis-Medium'
       },
       form: {
         backgroundColor: '#fff',
@@ -95,6 +99,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: 20,
+        fontFamily:'Dosis-Medium'
       },
       input: {
         borderWidth: 1,
@@ -103,11 +108,13 @@ const styles = StyleSheet.create({
         padding: 10,
         marginVertical: 10,
         color: '#000',
+        fontFamily:'Dosis-Medium'
       },
       buttonContainer: {
         borderWidth: 1,
         marginTop: 20,
         borderRadius: 5,
         padding: 3,
+        fontFamily:'Dosis-Medium'
       },
 })

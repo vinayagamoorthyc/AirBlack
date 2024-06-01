@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginVertical: 10,
+        fontFamily:'YesevaOne-Regular'
       },
       buttonContainer: {
         borderWidth: 1,

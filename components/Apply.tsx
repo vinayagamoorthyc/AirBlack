@@ -5,7 +5,8 @@ import {useFonts} from 'expo-font';
 
 const Apply = () => {
   const [fontsLoaded]=useFonts({
-    'Dosis-regular':require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/fonts/Dosis-Regular.ttf')
+    'Dosis-Medium':require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/fonts/Dosis-Medium.ttf'),
+    'YesevaOne-Regular':require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/fonts/YesevaOne-Regular.ttf'),
   })
   if(!fontsLoaded){
     return undefined;
@@ -66,6 +67,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginVertical: 10,
+        fontFamily:'YesevaOne-Regular'
       },
       applyfeatures:{
         flexDirection: 'row',
@@ -76,7 +78,7 @@ const styles = StyleSheet.create({
         color:'#fff',
         fontSize: 17,
         textAlign:'center',
-        fontFamily:'Dosis-Regular'
+        fontFamily:'Dosis-Medium'
       },
       featureflex:{
         alignItems:'center',
@@ -88,6 +90,7 @@ const styles = StyleSheet.create({
         padding: 3,
         borderColor:'#fff',
         width:'95%',
-        marginBottom:20
+        marginBottom:20,
+        fontFamily:'Dosis-Medium'
       },
 })

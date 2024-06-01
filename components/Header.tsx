@@ -47,6 +47,6 @@ const styles = StyleSheet.create({
       presents: {
         color: '#fff',
         fontSize: 14,
-        marginVertical: 5,
+        fontFamily:'YesevaOne-Regular'
       },
 })

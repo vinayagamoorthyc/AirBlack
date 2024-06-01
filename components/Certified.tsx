@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         marginVertical: 10,
+        fontFamily:'YesevaOne-Regular'
     },
     certificate:{
         width: 350,
