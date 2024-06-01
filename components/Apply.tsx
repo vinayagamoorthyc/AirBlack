@@ -10,7 +10,7 @@ const Apply = () => {
     >
         <View style={styles.overlay}>
             <View style={styles.applyflex}>
-                <Text style={styles.title}>Why Should You Join Airblack?</Text>
+                <Text style={styles.title}>Why Should You{"\n"} Join Airblack?</Text>
                 <View style={styles.applyfeatures}>
                     <View style={styles.featureflex}>
                         <Ionicons name="videocam" size={27} color="white" /> 
