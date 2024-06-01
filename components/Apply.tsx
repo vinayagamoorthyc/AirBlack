@@ -1,8 +1,15 @@
 import { Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons'
+import {useFonts} from 'expo-font';
 
 const Apply = () => {
+  const [fontsLoaded]=useFonts({
+    'Dosis-regular':require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/fonts/Dosis-Regular.ttf')
+  })
+  if(!fontsLoaded){
+    return undefined;
+  }
   return (
       <ImageBackground
     source={{uri: 'https://c7.alamy.com/comp/2RXHBX6/collage-with-beautiful-indian-women-on-color-background-2RXHBX6.jpg'}}
@@ -68,11 +75,12 @@ const styles = StyleSheet.create({
       featuretext:{
         color:'#fff',
         fontSize: 17,
-        textAlign:'center'
+        textAlign:'center',
+        fontFamily:'Dosis-Regular'
       },
       featureflex:{
         alignItems:'center',
-        gap:10
+        gap:10,
       },
       buttonContainer: {
         borderWidth: 1,

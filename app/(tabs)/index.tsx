@@ -3,17 +3,13 @@ import Certified from '@/components/Certified';
 import Footer from '@/components/Footer';
 import Form from '@/components/Form';
 import Header from '@/components/Header';
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet,ScrollView, View, Image } from 'react-native';
 
 export default function HomeScreen() {
   return (
     <View style={styles.whole}>
       <View style={styles.socials}>
-        {/* <Ionicons name="logo-instagram" size={35} color="#f56563" />
-        <Ionicons name="logo-facebook" size={35} color="#f56563" />
-        <Ionicons name="logo-linkedin" size={35} color="#f56563" />
-        <Ionicons name="logo-twitter" size={35} color="#f56563" /> */}
+        
         <Image 
         source={require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/images/insta.png')}
         style={styles.social}
