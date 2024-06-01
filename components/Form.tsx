@@ -1,9 +1,26 @@
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { Dropdown } from 'react-native-element-dropdown';
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const Form = () => {
+
+  const [value0, setValue0] = useState("+91");
+
+  const [value, setValue] = useState(null);
+  const [value2, setValue2] = useState(null);
+  const [value3, setValue3] = useState(null);
+
+  const items = [
+    { label: 'option 1', value: 'option 1' },
+    { label: 'option 2', value: 'option 2' },
+  ];
+  const items2 = [
+    { label: '+91', value: '+91' },
+    { label: '+92', value: '+92' },
+  ];
+
   return (
        <View style={styles.overlay}>
           <View style={styles.header}>
@@ -21,11 +38,65 @@ const Form = () => {
           
           <View style={styles.form}>
             <Text style={styles.formTitle}>FILL THE FORM BELOW TO ENQUIRE</Text>
-            <TextInput style={styles.input} placeholder="Enter your name" placeholderTextColor="#aaa"/>
-            <TextInput style={styles.input} placeholder="Enter your WhatsApp Number" placeholderTextColor="#aaa"/>
-            <TextInput style={styles.input} placeholder="Select your profession" placeholderTextColor="#aaa"/>
-            <TextInput style={styles.input} placeholder="Select your goal" placeholderTextColor="#aaa"/>
-            <TextInput style={styles.input} placeholder="Select your city" placeholderTextColor="#aaa"/>
+            <Text>*Enter your name</Text>
+            <TextInput style={styles.input} placeholder="Eg. Vinayaga Moorthy" placeholderTextColor="#aaa"/>
+            <Text>*Enter your WhatsApp Number</Text>
+            <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
+              <Dropdown
+                style={{width:50,borderWidth:1,borderRadius:5}}
+                placeholderStyle={styles.placeholderStyle}
+                selectedTextStyle={styles.selectedTextStyle}
+                data={items2}
+                labelField="label"
+                valueField="value"
+                value={value0}
+                onChange={item => {
+                  setValue0(item.value);
+                }}
+              /><TextInput style={styles.input2} placeholder="Eg. 00000 00000" placeholderTextColor="#aaa"/>
+            </View>
+            <Text>*Select your profession</Text>
+            <Dropdown
+              style={styles.input}
+              placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              data={items}
+              labelField="label"
+              valueField="value"
+              placeholder="Choose the most relevent option"
+              value={value}
+              onChange={item => {
+                setValue(item.value);
+              }}
+            />
+            <Text>*Select your goal</Text>
+            <Dropdown
+              style={styles.input}
+              placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              data={items}
+              labelField="label"
+              valueField="value"
+              placeholder="Choose the most relevent option"
+              value={value2}
+              onChange={item => {
+                setValue2(item.value);
+              }}
+            />
+            <Text>*Select your city</Text>
+            <Dropdown
+              style={styles.input}
+              placeholderStyle={styles.placeholderStyle}
+              selectedTextStyle={styles.selectedTextStyle}
+              data={items}
+              labelField="label"
+              valueField="value"
+              placeholder="Choose the most relevent option"
+              value={value3}
+              onChange={item => {
+                setValue3(item.value);
+              }}
+            />
             <View style={styles.buttonContainer}>
               <Button title="Submit" color="#000"/>
             </View>
@@ -92,6 +163,7 @@ const styles = StyleSheet.create({
         padding: 20,
         width: '100%',
         marginTop: 20,
+        
       },
       formTitle: {
         color: '#000',
@@ -108,13 +180,37 @@ const styles = StyleSheet.create({
         padding: 10,
         marginVertical: 10,
         color: '#000',
-        fontFamily:'Dosis-Medium'
+        fontFamily:'Dosis-Medium',
+      },
+      input2:{
+        borderWidth: 1,
+        borderColor: '#000',
+        borderRadius: 5,
+        padding: 10,
+        marginVertical: 10,
+        color: '#000',
+        fontFamily:'Dosis-Medium',
+        width:'80%'
       },
       buttonContainer: {
         borderWidth: 1,
         marginTop: 20,
         borderRadius: 5,
         padding: 3,
+        fontFamily:'Dosis-Medium'
+      },
+      placeholderStyle: {
+        fontSize: 16,
+        color: '#b5b5b5',
+        fontFamily:'Dosis-Medium'
+      },
+      selectedTextStyle: {
+        fontSize: 15,
+        fontFamily:'Dosis-Medium'
+      },
+      selectedText: {
+        marginTop: 20,
+        fontSize: 15,
         fontFamily:'Dosis-Medium'
       },
 })
