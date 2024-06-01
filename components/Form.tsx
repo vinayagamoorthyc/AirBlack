@@ -27,7 +27,7 @@ const Form = () => {
             <TextInput style={styles.input} placeholder="Select your goal" placeholderTextColor="#aaa"/>
             <TextInput style={styles.input} placeholder="Select your city" placeholderTextColor="#aaa"/>
             <View style={styles.buttonContainer}>
-              <Button title="Submit" color="#ff4081"/>
+              <Button title="Submit" color="#a39193"/>
             </View>
           </View>
         </View>
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
       },
       formTitle: {
-        color: '#ff4081',
+        color: '#a39193',
         fontSize: 16,
         fontWeight: 'bold',
         textAlign: 'center',
@@ -109,6 +109,6 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         marginTop: 20,
         borderRadius: 0,
-        padding: 3
+        padding: 3,
       },
 })
