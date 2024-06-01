@@ -8,9 +8,9 @@ const Form = () => {
 
   const [value0, setValue0] = useState("+91");
 
-  const [value, setValue] = useState(null);
-  const [value2, setValue2] = useState(null);
-  const [value3, setValue3] = useState(null);
+  const [value, setValue] = useState(String);
+  const [value2, setValue2] = useState(String);
+  const [value3, setValue3] = useState(String);
 
   const items = [
     { label: 'option 1', value: 'option 1' },
