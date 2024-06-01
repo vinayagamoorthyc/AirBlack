@@ -1,0 +1,112 @@
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
+import React from 'react'
+
+const Form = () => {
+  return (
+       <View style={styles.overlay}>
+          <View style={styles.header}>
+            <Text style={styles.title}>Professional Online Makeup Course</Text>
+            <View style={styles.subtitleContainer}>
+              <Text style={styles.subtitle}>Certification Programme</Text>
+              <Text style={styles.rating}>Rated 4.85/5</Text>
+            </View>
+            <View style={styles.bullets}>
+              <Text style={styles.bullet}>• India's No.1 Online Makeup Course</Text>
+              <Text style={styles.bullet}>• Learn by LIVE Do-it-Together Classes</Text>
+              <Text style={styles.bullet}>• Unlimited Practise Session to master skills</Text>
+            </View>
+          </View>
+          
+          <View style={styles.form}>
+            <Text style={styles.formTitle}>FILL THE FORM BELOW TO ENQUIRE</Text>
+            <TextInput style={styles.input} placeholder="Enter your name" placeholderTextColor="#aaa"/>
+            <TextInput style={styles.input} placeholder="Enter your WhatsApp Number" placeholderTextColor="#aaa"/>
+            <TextInput style={styles.input} placeholder="Select your profession" placeholderTextColor="#aaa"/>
+            <TextInput style={styles.input} placeholder="Select your goal" placeholderTextColor="#aaa"/>
+            <TextInput style={styles.input} placeholder="Select your city" placeholderTextColor="#aaa"/>
+            <View style={styles.buttonContainer}>
+              <Button title="Submit" color="#ff4081"/>
+            </View>
+          </View>
+        </View>
+  )
+}
+
+export default Form
+
+const styles = StyleSheet.create({
+    overlay: {
+        backgroundColor: 'black',
+        flex: 1,
+        width: '100%',
+        padding: 20,
+      },
+      header: {
+        alignItems: 'center',
+        marginBottom: 20,
+      },
+      title: {
+        color: '#fff',
+        fontSize: 24,
+        fontWeight: 'bold',
+        textAlign: 'left',
+        marginVertical: 10,
+      },
+      subtitleContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '100%',
+        paddingHorizontal: 20,
+        marginVertical: 10,
+      },
+      subtitle: {
+        color: '#fff',
+        backgroundColor: '#444',
+        paddingVertical: 5,
+        paddingHorizontal: 10,
+        borderRadius: 5,
+      },
+      rating: {
+        color: '#ffd700',
+        paddingVertical: 5,
+        paddingHorizontal: 10,
+        borderRadius: 5,
+      },
+      bullets: {
+        alignItems: 'flex-start',
+        marginTop: 10,
+      },
+      bullet: {
+        color: '#fff',
+        fontSize: 16,
+        marginVertical: 2,
+      },
+      form: {
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        padding: 20,
+        width: '100%',
+        marginTop: 20,
+      },
+      formTitle: {
+        color: '#ff4081',
+        fontSize: 16,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginBottom: 20,
+      },
+      input: {
+        borderWidth: 1,
+        borderColor: '#000',
+        borderRadius: 0,
+        padding: 10,
+        marginVertical: 10,
+        color: '#000',
+      },
+      buttonContainer: {
+        borderWidth: 1,
+        marginTop: 20,
+        borderRadius: 0,
+        padding: 3
+      },
+})
