@@ -5,8 +5,8 @@ import {useFonts} from 'expo-font';
 
 const Apply = () => {
   const [fontsLoaded]=useFonts({
-    'Dosis-Medium':require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/fonts/Dosis-Medium.ttf'),
-    'YesevaOne-Regular':require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/fonts/YesevaOne-Regular.ttf'),
+    'Dosis-Medium':require('../assets/fonts/Dosis-Medium.ttf'),
+    'YesevaOne-Regular':require('../assets/fonts/YesevaOne-Regular.ttf'),
   })
   if(!fontsLoaded){
     return undefined;

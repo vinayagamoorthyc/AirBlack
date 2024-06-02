@@ -11,19 +11,19 @@ export default function HomeScreen() {
       <View style={styles.socials}>
         
         <Image 
-        source={require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/images/insta.png')}
+        source={require('../assets/images/insta.png')}
         style={styles.social}
         ></Image>
         <Image 
-        source={require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/images/facebook.png')}
+        source={require('../assets/images/facebook.png')}
         style={styles.social}
         ></Image>
         <Image 
-        source={require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/images/linkedin.png')}
+        source={require('../assets/images/linkedin.png')}
         style={styles.social}
         ></Image>
         <Image 
-        source={require('/Users/vinayagamoorthyc/Documents/React Native Projects/AirBlack_Assignment/Assign/assets/images/twitter.png')}
+        source={require('../assets/images/twitter.png')}
         style={styles.social}
         ></Image>
       </View>
