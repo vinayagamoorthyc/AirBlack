@@ -1,4 +1,4 @@
-        -- AN SINGLE PAGE REACT NATIVE APPLICATION --
+        -- A SINGLE PAGE REACT NATIVE APPLICATION --
         
 This demo application, built to explore and learn React Native, features a user-friendly form for applying to an online makeup course. The single-page interface allows users to effortlessly input their details, ensuring a seamless and intuitive application experience.
 
